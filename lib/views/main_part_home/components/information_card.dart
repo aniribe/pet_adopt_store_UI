@@ -1,7 +1,7 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:pet_app_ui/model/cat_model.dart';
-import 'package:pet_app_ui/util/string_constants.dart';
+import 'package:pet_app_ui/config/string_constants.dart';
 import 'package:pet_app_ui/views/item_page/item_page.dart';
 import 'package:pet_app_ui/views/main_part_home/components/pet_section.dart';
 import 'card_info_section.dart';

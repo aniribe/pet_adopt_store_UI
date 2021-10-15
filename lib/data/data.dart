@@ -1,3 +1,5 @@
+import 'package:flutter/material.dart';
+import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:pet_app_ui/model/cat_model.dart';
 import 'package:pet_app_ui/model/category_button.dart';
 
@@ -28,4 +30,13 @@ List<Cat> pets = [
     distance: '7.8 km',
     address: '5, Bulvarna-Kudritska Street, Kyiv',
   ),
+];
+
+List<Map> drawerItems = [
+  {'icon': FontAwesomeIcons.paw, 'title': 'Adoption'},
+  {'icon': Icons.mail, 'title': 'Donation'},
+  {'icon': FontAwesomeIcons.plus, 'title': 'Add pet'},
+  {'icon': Icons.favorite, 'title': 'Favorites'},
+  {'icon': Icons.mail, 'title': 'Messages'},
+  {'icon': FontAwesomeIcons.userAlt, 'title': 'Profile'},
 ];

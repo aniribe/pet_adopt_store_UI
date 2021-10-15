@@ -1,9 +1,8 @@
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:pet_app_ui/config/app_colors.dart';
 import 'package:pet_app_ui/config/app_size.dart';
 import 'package:pet_app_ui/data/data.dart';
-import 'package:pet_app_ui/util/string_constants.dart';
+import 'package:pet_app_ui/config/string_constants.dart';
 import 'package:pet_app_ui/views/main_part_home/components/cat_age.dart';
 import 'package:pet_app_ui/views/main_part_home/components/cat_name_section.dart';
 import 'package:pet_app_ui/views/main_part_home/components/cat_type.dart';
@@ -40,7 +39,7 @@ class ItemPage extends StatelessWidget {
             ],
           )),
           Container(
-            margin: EdgeInsets.only(top: 40),
+            margin: const EdgeInsets.only(top: 40),
             child: Align(
               alignment: Alignment.topCenter,
               child: Row(
@@ -62,8 +61,8 @@ class ItemPage extends StatelessWidget {
             alignment: Alignment.center,
             child: Container(
               height: 100,
-              margin: EdgeInsets.symmetric(horizontal: 20),
-              padding: EdgeInsets.symmetric(horizontal: 15, vertical: 10),
+              margin: const EdgeInsets.symmetric(horizontal: 20),
+              padding: const EdgeInsets.symmetric(horizontal: 15, vertical: 10),
               decoration: BoxDecoration(
                 color: AppColors.white,
                 boxShadow: AppColors.shadowList,
@@ -105,8 +104,8 @@ class ItemPage extends StatelessWidget {
             alignment: Alignment.bottomCenter,
             child: Container(
               height: 120,
-              margin: EdgeInsets.symmetric(horizontal: 20),
-              padding: EdgeInsets.symmetric(horizontal: 15),
+              margin: const EdgeInsets.symmetric(horizontal: 20),
+              padding: const EdgeInsets.symmetric(horizontal: 15),
               child: Row(
                 children: [
                   Container(
@@ -142,7 +141,7 @@ class ItemPage extends StatelessWidget {
               ),
               decoration: BoxDecoration(
                   color: AppColors.grey200,
-                  borderRadius: BorderRadius.only(
+                  borderRadius: const BorderRadius.only(
                     topLeft: Radius.circular(40),
                     topRight: Radius.circular(40),
                   )),

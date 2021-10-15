@@ -41,7 +41,7 @@ class _MainPartHomePageState extends State<MainPartHomePage> {
       transform: Matrix4.translationValues(xOffset, yOffset, 0)
         ..scale(scaleFactor)
         ..rotateY(isDrawerOpen ? -0.5 : 0),
-      duration: Duration(milliseconds: 250),
+      duration: const Duration(milliseconds: 250),
       decoration: BoxDecoration(
         color: AppColors.grey200,
         borderRadius: BorderRadius.circular(isDrawerOpen ? 40 : 0),

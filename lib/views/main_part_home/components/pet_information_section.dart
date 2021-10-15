@@ -7,8 +7,8 @@ class PetInformationSection extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return ListView.builder(
-        padding: EdgeInsets.all(0),
-        physics: NeverScrollableScrollPhysics(),
+        padding: const EdgeInsets.all(0),
+        physics: const NeverScrollableScrollPhysics(),
         shrinkWrap: true,
         itemCount: pets.length,
         itemBuilder: (context, index) {
