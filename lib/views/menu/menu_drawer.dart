@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:pet_app_ui/config/app_colors.dart';
 import 'package:pet_app_ui/config/app_size.dart';
 import 'package:pet_app_ui/data/data.dart';
+import 'components/item_list_section.dart';
 import 'components/user_section.dart';
 
 class MenuDrawer extends StatefulWidget {
@@ -21,7 +22,7 @@ class _MenuDrawerState extends State<MenuDrawer> {
         mainAxisAlignment: MainAxisAlignment.spaceBetween,
         children: [
           const UserSection(),
-          ItemListSection(),
+          const ItemListSection(),
           Row(
             children: [
               Icon(
@@ -50,40 +51,6 @@ class _MenuDrawerState extends State<MenuDrawer> {
           ),
         ],
       ),
-    );
-  }
-}
-
-class ItemListSection extends StatelessWidget {
-  const ItemListSection({
-    Key? key,
-  }) : super(key: key);
-
-  @override
-  Widget build(BuildContext context) {
-    return Column(
-      children: drawerItems
-          .map((item) => Padding(
-                padding: const EdgeInsets.all(8.0),
-                child: Row(
-                  children: [
-                    Icon(
-                      item['icon'],
-                      color: AppColors.white,
-                      size: 30,
-                    ),
-                    horizontalSpace(width: 10),
-                    Text(
-                      item['title'],
-                      style: TextStyle(
-                          color: AppColors.white,
-                          fontWeight: FontWeight.bold,
-                          fontSize: 20),
-                    )
-                  ],
-                ),
-              ))
-          .toList(),
     );
   }
 }
