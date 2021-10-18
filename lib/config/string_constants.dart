@@ -6,4 +6,6 @@ class StringConstants {
 
   static const String activeStatus = 'Active status';
   static const String userName = 'Miroslava Savitskaya';
+  static const String settings = 'Settings';
+  static const String logout = 'Log out';
 }
