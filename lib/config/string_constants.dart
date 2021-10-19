@@ -8,4 +8,7 @@ class StringConstants {
   static const String userName = 'Miroslava Savitskaya';
   static const String settings = 'Settings';
   static const String logout = 'Log out';
+  static const String location = 'Location';
+  static const String city = 'Baku,';
+  static const String country = ' Azerbaijan';
 }

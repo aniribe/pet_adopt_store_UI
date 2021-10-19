@@ -1,4 +1,3 @@
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:pet_app_ui/config/app_colors.dart';
 import 'package:pet_app_ui/config/app_size.dart';
