@@ -5,6 +5,7 @@ import 'package:pet_app_ui/config/app_size.dart';
 import 'package:pet_app_ui/widgets/search_bar.dart';
 import 'components/button_row_section.dart';
 import 'components/custom_appbar.dart';
+import 'components/page_content.dart';
 import 'components/pet_information_section.dart';
 
 class MainPartHomePage extends StatefulWidget {
@@ -43,7 +44,7 @@ class _MainPartHomePageState extends State<MainPartHomePage> {
         ..rotateY(isDrawerOpen ? -0.5 : 0),
       duration: const Duration(milliseconds: 250),
       decoration: BoxDecoration(
-        color: AppColors.grey200,
+        color: AppColors.white,
         borderRadius: BorderRadius.circular(isDrawerOpen ? 40 : 0),
       ),
       child: SingleChildScrollView(
@@ -51,10 +52,8 @@ class _MainPartHomePageState extends State<MainPartHomePage> {
           children: [
             verticalSpace(height: isDrawerOpen ? 10 : 50),
             CustomAppBar(isDrawerOpen: isDrawerOpen, onTap: changePosition),
-            SearchBar(),
-            ButtonRowSection(),
-            PetInformationSection(),
-            verticalSpace(height: 50),
+            verticalSpace(height: 20),
+            const PageContent(),
           ],
         ),
       ),

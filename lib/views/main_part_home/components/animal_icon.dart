@@ -11,7 +11,7 @@ class AnimalIcon extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      padding: EdgeInsets.all(10),
+      padding: const EdgeInsets.all(10),
       decoration: BoxDecoration(
         color: isPressed ? AppColors.primaryGreen : AppColors.white,
         boxShadow: AppColors.shadowList,
@@ -21,7 +21,7 @@ class AnimalIcon extends StatelessWidget {
         categories[index].iconPath,
         height: 50,
         width: 50,
-        color: isPressed ? AppColors.white : AppColors.grey700,
+        color: isPressed ? AppColors.white : AppColors.grey700.withOpacity(0.6),
       ),
     );
   }

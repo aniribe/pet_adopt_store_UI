@@ -1,6 +1,4 @@
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:pet_app_ui/config/app_colors.dart';
 import 'package:pet_app_ui/widgets/menu_button.dart';
 import '../../../config/string_constants.dart';
 import 'location_section.dart';

@@ -12,8 +12,9 @@ class LocationSection extends StatelessWidget {
         Text(
           StringConstants.location,
           style: TextStyle(
-            color: AppColors.grey700.withOpacity(0.6),
-            fontWeight: FontWeight.w500,
+            color: AppColors.grey700.withOpacity(0.4),
+            fontWeight: FontWeight.w600,
+            fontSize: 16,
           ),
         ),
         verticalSpace(height: 7),

@@ -1,17 +1,17 @@
 import 'package:flutter/material.dart';
 
 class AppColors {
-  static Color white = Color(0xFFFFFFFF);
+  static Color white = const Color(0xFFFFFFFF);
 
-  static Color grey200 = Color(0xFFEEEDED);
+  static Color grey200 = const Color(0xFFf8f8f8);
 
-  static Color grey700 = Color(0xFF616060);
+  static Color grey700 = const Color(0xFF616060);
 
-  static Color primaryGreen = Color(0xFF416D6D);
+  static Color primaryGreen = const Color(0xFF416D6D);
 
-  static Color blueGrey300 = Color(0xFFA3C2CA);
+  static Color blueGrey300 = const Color(0xFFD4DCDF);
 
-  static Color orange100 = Color(0xFFEFD9D3);
+  static Color orange100 = const Color(0xFFF0DBBC);
 
   static List<BoxShadow> shadowList = [
     BoxShadow(

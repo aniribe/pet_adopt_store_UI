@@ -10,7 +10,11 @@ class CatAge extends StatelessWidget {
   Widget build(BuildContext context) {
     return Text(
       age,
-      style: TextStyle(fontSize: 16, color: AppColors.grey700),
+      style: TextStyle(
+        fontSize: 14,
+        color: AppColors.grey700.withOpacity(0.6),
+        fontWeight: FontWeight.w600,
+      ),
     );
   }
 }

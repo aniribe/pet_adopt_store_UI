@@ -1,4 +1,6 @@
 import 'package:flutter/cupertino.dart';
+import 'package:flutter/material.dart';
+import 'package:pet_app_ui/config/app_colors.dart';
 import 'package:pet_app_ui/config/app_size.dart';
 import 'package:pet_app_ui/data/data.dart';
 import 'animal_icon.dart';
@@ -20,7 +22,7 @@ class _ButtonRowSectionState extends State<ButtonRowSection> {
             return GestureDetector(
               onTap: () => onButtonPressed(index),
               child: Container(
-                margin: EdgeInsets.only(left: 20),
+                margin: const EdgeInsets.only(left: 20),
                 child: Column(
                   crossAxisAlignment: CrossAxisAlignment.center,
                   children: [
@@ -31,6 +33,9 @@ class _ButtonRowSectionState extends State<ButtonRowSection> {
                     verticalSpace(height: 7),
                     Text(
                       categories[index].name,
+                      style: TextStyle(
+                          fontWeight: FontWeight.bold,
+                          color: AppColors.grey700.withOpacity(0.6)),
                       textAlign: TextAlign.center,
                     ),
                   ],

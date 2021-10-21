@@ -11,4 +11,5 @@ class StringConstants {
   static const String location = 'Location';
   static const String city = 'Baku,';
   static const String country = ' Azerbaijan';
+  static const String female = 'female';
 }

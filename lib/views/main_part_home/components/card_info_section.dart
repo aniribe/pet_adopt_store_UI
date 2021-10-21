@@ -14,7 +14,7 @@ class CardInfoSection extends StatelessWidget {
   final String age;
   final String distance;
 
-  CardInfoSection(
+  const CardInfoSection(
       {required this.name,
       required this.sex,
       required this.type,
@@ -25,12 +25,12 @@ class CardInfoSection extends StatelessWidget {
   Widget build(BuildContext context) {
     return Expanded(
       child: Container(
-        margin: EdgeInsets.only(top: 60, bottom: 20),
-        padding: EdgeInsets.symmetric(horizontal: 10, vertical: 20),
+        margin: const EdgeInsets.only(top: 60, bottom: 20),
+        padding: const EdgeInsets.symmetric(horizontal: 10, vertical: 20),
         decoration: BoxDecoration(
           color: AppColors.white,
           boxShadow: AppColors.shadowList,
-          borderRadius: BorderRadius.only(
+          borderRadius: const BorderRadius.only(
             topRight: Radius.circular(20),
             bottomRight: Radius.circular(20),
           ),

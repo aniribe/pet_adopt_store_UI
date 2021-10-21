@@ -15,15 +15,16 @@ class CatNameSection extends StatelessWidget {
         Text(
           name,
           style: TextStyle(
-              fontSize: 23,
-              fontWeight: FontWeight.w500,
-              color: AppColors.grey700),
+            fontSize: 23,
+            fontWeight: FontWeight.w600,
+            color: AppColors.grey700.withOpacity(0.9),
+          ),
         ),
         Container(
             height: 20,
             child: Image.asset(
               sex,
-              color: AppColors.grey700,
+              color: AppColors.grey700.withOpacity(0.6),
             ))
       ],
     );

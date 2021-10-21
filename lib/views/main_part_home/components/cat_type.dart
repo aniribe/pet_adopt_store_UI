@@ -11,7 +11,9 @@ class CatType extends StatelessWidget {
     return Text(
       type,
       style: TextStyle(
-          fontSize: 16, fontWeight: FontWeight.w500, color: AppColors.grey700),
+          fontSize: 16,
+          fontWeight: FontWeight.w500,
+          color: AppColors.grey700.withOpacity(0.7)),
     );
   }
 }

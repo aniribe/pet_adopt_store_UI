@@ -25,13 +25,13 @@ class InformationCard extends StatelessWidget {
       },
       child: Container(
         height: 240,
-        margin: EdgeInsets.symmetric(horizontal: 20),
+        margin: const EdgeInsets.symmetric(horizontal: 20),
         child: Row(
           children: [
             PetSection(image: cat.image.toString(), color: color, tag: heroTag),
             CardInfoSection(
               name: cat.name,
-              sex: cat.sex == 'female'
+              sex: cat.sex == StringConstants.female
                   ? StringConstants.femaleImage
                   : StringConstants.maleImage,
               type: cat.type,
