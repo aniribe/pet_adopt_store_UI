@@ -7,6 +7,8 @@ import 'package:pet_app_ui/views/main_part_home/components/cat_age.dart';
 import 'package:pet_app_ui/views/main_part_home/components/cat_name_section.dart';
 import 'package:pet_app_ui/views/main_part_home/components/cat_type.dart';
 
+import 'components/top_icons_line.dart';
+
 class ItemPage extends StatelessWidget {
   final int index;
 
@@ -38,25 +40,7 @@ class ItemPage extends StatelessWidget {
               ))
             ],
           )),
-          Container(
-            margin: const EdgeInsets.only(top: 40),
-            child: Align(
-              alignment: Alignment.topCenter,
-              child: Row(
-                mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                children: [
-                  IconButton(
-                    icon: Icon(Icons.arrow_back, color: AppColors.grey700),
-                    onPressed: () => Navigator.pop(context),
-                  ),
-                  IconButton(
-                    icon: Icon(Icons.share, color: AppColors.grey700),
-                    onPressed: () {},
-                  ),
-                ],
-              ),
-            ),
-          ),
+          const TopIconsLine(),
           Align(
             alignment: Alignment.center,
             child: Container(
