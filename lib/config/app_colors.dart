@@ -15,10 +15,10 @@ class AppColors {
 
   static List<BoxShadow> shadowList = [
     BoxShadow(
-      color: grey700.withOpacity(0.6),
-      blurRadius: 15,
-      spreadRadius: -8,
-      offset: Offset(0, 10),
+      color: grey700.withOpacity(0.5),
+      blurRadius: 20,
+      spreadRadius: 7,
+      offset: const Offset(0, 10),
     )
   ];
 }

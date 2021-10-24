@@ -2,9 +2,9 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:pet_app_ui/config/app_colors.dart';
 
-import 'cat_age.dart';
-import 'cat_name_section.dart';
-import 'cat_type.dart';
+import '../../../widgets/cat_age.dart';
+import '../../../widgets/cat_name_section.dart';
+import '../../../widgets/cat_type.dart';
 import 'distance_section.dart';
 
 class CardInfoSection extends StatelessWidget {

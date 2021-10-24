@@ -3,10 +3,11 @@ import 'package:pet_app_ui/config/app_colors.dart';
 import 'package:pet_app_ui/config/app_size.dart';
 import 'package:pet_app_ui/data/data.dart';
 import 'package:pet_app_ui/config/string_constants.dart';
-import 'package:pet_app_ui/views/main_part_home/components/cat_age.dart';
-import 'package:pet_app_ui/views/main_part_home/components/cat_name_section.dart';
-import 'package:pet_app_ui/views/main_part_home/components/cat_type.dart';
+import 'package:pet_app_ui/widgets/cat_age.dart';
+import 'package:pet_app_ui/widgets/cat_name_section.dart';
+import 'package:pet_app_ui/widgets/cat_type.dart';
 
+import 'components/cat_info_section.dart';
 import 'components/top_icons_line.dart';
 
 class ItemPage extends StatelessWidget {
@@ -41,49 +42,7 @@ class ItemPage extends StatelessWidget {
             ],
           )),
           const TopIconsLine(),
-          Align(
-            alignment: Alignment.center,
-            child: Container(
-              height: 100,
-              margin: const EdgeInsets.symmetric(horizontal: 20),
-              padding: const EdgeInsets.symmetric(horizontal: 15, vertical: 10),
-              decoration: BoxDecoration(
-                color: AppColors.white,
-                boxShadow: AppColors.shadowList,
-                borderRadius: BorderRadius.circular(20),
-              ),
-              child: Column(
-                children: [
-                  CatNameSection(
-                    name: pets[index].name,
-                    sex: pets[index].sex == 'female'
-                        ? StringConstants.femaleImage
-                        : StringConstants.maleImage,
-                  ),
-                  verticalSpace(height: 5),
-                  Row(
-                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                    children: [
-                      CatType(type: pets[index].type),
-                      CatAge(age: pets[index].age),
-                    ],
-                  ),
-                  verticalSpace(height: 5),
-                  Row(
-                    children: [
-                      Icon(
-                        Icons.location_on,
-                        size: 20,
-                        color: AppColors.primaryGreen,
-                      ),
-                      horizontalSpace(width: 10),
-                      Text(pets[index].address)
-                    ],
-                  ),
-                ],
-              ),
-            ),
-          ),
+          CatInfoSection(index: index),
           Align(
             alignment: Alignment.bottomCenter,
             child: Container(
