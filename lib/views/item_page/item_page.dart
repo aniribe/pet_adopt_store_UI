@@ -7,6 +7,7 @@ import 'package:pet_app_ui/widgets/cat_age.dart';
 import 'package:pet_app_ui/widgets/cat_name_section.dart';
 import 'package:pet_app_ui/widgets/cat_type.dart';
 
+import 'components/button_section.dart';
 import 'components/cat_info_section.dart';
 import 'components/top_icons_line.dart';
 
@@ -43,53 +44,7 @@ class ItemPage extends StatelessWidget {
           )),
           const TopIconsLine(),
           CatInfoSection(index: index),
-          Align(
-            alignment: Alignment.bottomCenter,
-            child: Container(
-              height: 120,
-              margin: const EdgeInsets.symmetric(horizontal: 20),
-              padding: const EdgeInsets.symmetric(horizontal: 15),
-              child: Row(
-                children: [
-                  Container(
-                    height: 60,
-                    width: 70,
-                    decoration: BoxDecoration(
-                      color: AppColors.primaryGreen,
-                      borderRadius: BorderRadius.circular(20),
-                    ),
-                    child: Icon(
-                      Icons.favorite_border,
-                      color: AppColors.white,
-                    ),
-                  ),
-                  horizontalSpace(width: 10),
-                  Expanded(
-                    child: Container(
-                      height: 60,
-                      decoration: BoxDecoration(
-                        color: AppColors.primaryGreen,
-                        borderRadius: BorderRadius.circular(20),
-                      ),
-                      child: Center(
-                        child: Text(
-                          'Adoption',
-                          style:
-                              TextStyle(color: AppColors.white, fontSize: 24),
-                        ),
-                      ),
-                    ),
-                  )
-                ],
-              ),
-              decoration: BoxDecoration(
-                  color: AppColors.grey200,
-                  borderRadius: const BorderRadius.only(
-                    topLeft: Radius.circular(40),
-                    topRight: Radius.circular(40),
-                  )),
-            ),
-          ),
+          const ButtonSection(),
         ],
       ),
     );

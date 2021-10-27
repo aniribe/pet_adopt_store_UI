@@ -12,4 +12,5 @@ class StringConstants {
   static const String city = 'Baku,';
   static const String country = ' Azerbaijan';
   static const String female = 'female';
+  static const String adoption = 'Adoption';
 }

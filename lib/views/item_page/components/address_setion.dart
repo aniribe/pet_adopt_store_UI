@@ -21,7 +21,13 @@ class AddressSection extends StatelessWidget {
           color: AppColors.primaryGreen,
         ),
         horizontalSpace(width: 10),
-        Text(pets[index].address)
+        Text(
+          pets[index].address,
+          style: TextStyle(
+            color: AppColors.grey700.withOpacity(0.6),
+            fontWeight: FontWeight.w500,
+          ),
+        )
       ],
     );
   }
