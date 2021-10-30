@@ -9,6 +9,7 @@ import 'package:pet_app_ui/widgets/cat_type.dart';
 
 import 'components/button_section.dart';
 import 'components/cat_info_section.dart';
+import 'components/image_section.dart';
 import 'components/top_icons_line.dart';
 
 class ItemPage extends StatelessWidget {
@@ -24,18 +25,7 @@ class ItemPage extends StatelessWidget {
           Positioned.fill(
               child: Column(
             children: [
-              Expanded(
-                  child: Container(
-                color: AppColors.blueGrey300,
-                child: Center(
-                  child: Container(
-                      height: screenHeight(context) * 0.38,
-                      child: Image.asset(
-                        pets[index].image,
-                        fit: BoxFit.cover,
-                      )),
-                ),
-              )),
+              ImageSection(index: index),
               Expanded(
                   child: Container(
                 color: AppColors.white,
