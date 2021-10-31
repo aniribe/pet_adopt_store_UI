@@ -9,6 +9,7 @@ import 'package:pet_app_ui/widgets/cat_type.dart';
 
 import 'components/button_section.dart';
 import 'components/cat_info_section.dart';
+import 'components/description_section.dart';
 import 'components/image_section.dart';
 import 'components/top_icons_line.dart';
 
@@ -26,10 +27,7 @@ class ItemPage extends StatelessWidget {
               child: Column(
             children: [
               ImageSection(index: index),
-              Expanded(
-                  child: Container(
-                color: AppColors.white,
-              ))
+              const DescriptionSection(),
             ],
           )),
           const TopIconsLine(),

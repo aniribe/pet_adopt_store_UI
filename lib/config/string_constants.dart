@@ -13,4 +13,9 @@ class StringConstants {
   static const String country = ' Azerbaijan';
   static const String female = 'female';
   static const String adoption = 'Adoption';
+  static const String ownerName = 'Kendal Jenner';
+  static const String ownerStatus = 'Owner';
+  static const String date = 'May 25, 2022';
+  static const String adoptDescription =
+      'My job requires moving fo another country, I don\'t have the opportunity fo fake the cat with me. I am looking for good people who will shelter my Sola.';
 }
