@@ -1,6 +1,7 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:pet_app_ui/config/app_size.dart';
+import 'package:pet_app_ui/views/item_page/components/user_date_line.dart';
 import 'package:pet_app_ui/widgets/user_section.dart';
 import '../../../config/app_colors.dart';
 import '../../../config/string_constants.dart';
@@ -18,26 +19,7 @@ class DescriptionSection extends StatelessWidget {
       color: AppColors.white,
       child: Column(
         children: [
-          Row(
-            mainAxisAlignment: MainAxisAlignment.spaceBetween,
-            crossAxisAlignment: CrossAxisAlignment.start,
-            children: [
-              UserSection(
-                avatarImage: StringConstants.avatar2Image,
-                textColor: AppColors.grey700,
-                userName: StringConstants.ownerName,
-                status: StringConstants.ownerStatus,
-              ),
-              Text(
-                StringConstants.date,
-                style: TextStyle(
-                  color: AppColors.grey700.withOpacity(0.5),
-                  fontWeight: FontWeight.w500,
-                  fontSize: 14,
-                ),
-              )
-            ],
-          ),
+          const UserDateLine(),
           verticalSpace(height: 30),
           Text(
             StringConstants.adoptDescription,
