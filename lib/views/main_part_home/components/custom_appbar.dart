@@ -1,0 +1,30 @@
+import 'package:flutter/cupertino.dart';
+import 'package:flutter/material.dart';
+import 'package:pet_app_ui/config/app_colors.dart';
+import 'package:pet_app_ui/widgets/menu_button.dart';
+import 'location_section.dart';
+
+class CustomAppBar extends StatelessWidget {
+  final bool isDrawerOpen;
+  final VoidCallback onTap;
+
+  const CustomAppBar({required this.isDrawerOpen, required this.onTap});
+
+  @override
+  Widget build(BuildContext context) {
+    return Container(
+      margin: EdgeInsets.only(left: 20, right: 20, bottom: 10),
+      child: Row(
+        mainAxisAlignment: MainAxisAlignment.spaceBetween,
+        children: [
+          MenuButton(isDrawerOpen: isDrawerOpen, onTap: onTap),
+          LocationSection(),
+          CircleAvatar(
+            backgroundColor: AppColors.primaryGreen,
+            child: Text('IB'),
+          ),
+        ],
+      ),
+    );
+  }
+}
