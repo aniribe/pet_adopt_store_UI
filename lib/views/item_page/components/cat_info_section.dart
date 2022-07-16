@@ -21,7 +21,7 @@ class CatInfoSection extends StatelessWidget {
       alignment: Alignment.center,
       child: Container(
         height: 130,
-        margin: const EdgeInsets.symmetric(horizontal: 20),
+        margin: const EdgeInsets.symmetric(horizontal: 30),
         padding: const EdgeInsets.symmetric(horizontal: 15, vertical: 20),
         decoration: BoxDecoration(
           color: AppColors.white,

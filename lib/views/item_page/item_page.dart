@@ -31,6 +31,7 @@ class ItemPage extends StatelessWidget {
             ],
           )),
           const TopIconsLine(),
+          verticalSpace(height: 20),
           CatInfoSection(index: index),
           const ButtonSection(),
         ],
